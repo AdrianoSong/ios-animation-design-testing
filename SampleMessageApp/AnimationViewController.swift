@@ -41,16 +41,19 @@ class AnimationViewController: UIViewController {
     
     @objc
     fileprivate func handleInfoLabelAnimation() {
-        print("apertei aqui")
         
-        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: { [weak self] in
+        //prevent to call a lot of animationsf
+        if self.titleVCLabel.alpha > 0 {
             
-            self?.titleVCLabel.transform  = CGAffineTransform(translationX: 0, y: -200)
-            self?.titleVCLabel.alpha = 0
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: { [weak self] in
+                
+                self?.titleVCLabel.transform  = CGAffineTransform(translationX: 0, y: -200)
+                self?.titleVCLabel.alpha = 0
             
-        }) { [weak self] (_) in
-            
-            self?.createAngrySushiAnimation()
+            }) { [weak self] (_) in
+                
+                self?.createAngrySushiAnimation()
+            }
         }
     }
     
@@ -78,7 +81,7 @@ class AnimationViewController: UIViewController {
         let goodByeLabel = UILabel()
         goodByeLabel.font = UIFont.boldSystemFont(ofSize: 24)
         goodByeLabel.textAlignment = .center
-        goodByeLabel.text = "That's it folks! See you later"
+        goodByeLabel.text = "That's all folks! See you later"
         
         view.addSubview(goodByeLabel)
         
