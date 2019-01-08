@@ -77,7 +77,8 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-       
+        navigationItem.setHidesBackButton(true, animated: true)
+        
         navigationItem.title = "Message Screen"
         tableView.backgroundColor = UIColor(white: 0.95, alpha: 1)
         tableView.separatorStyle = .none

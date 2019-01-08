@@ -7,26 +7,87 @@
 //
 
 import UIKit
+import Lottie
 
 class AnimationViewController: UIViewController {
-
+    
+    private let titleVCLabel = UILabel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = "Animation Here!"
+        self.title = "The end is Here!"
         view.backgroundColor = .white
+        
+        createInfoLabel()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    fileprivate func createInfoLabel() {
+       
+        titleVCLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        titleVCLabel.text = "Please, tap here!"
+        
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleInfoLabelAnimation)))
+        view.addSubview(titleVCLabel)
+        
+        titleVCLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        let constraints = [titleVCLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+                           titleVCLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)]
+        
+        NSLayoutConstraint.activate(constraints)
     }
-    */
-
+    
+    @objc
+    fileprivate func handleInfoLabelAnimation() {
+        print("apertei aqui")
+        
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: { [weak self] in
+            
+            self?.titleVCLabel.transform  = CGAffineTransform(translationX: 0, y: -200)
+            self?.titleVCLabel.alpha = 0
+            
+        }) { [weak self] (_) in
+            
+            self?.createAngrySushiAnimation()
+        }
+    }
+    
+    private func createAngrySushiAnimation() {
+        let angrySushi = LOTAnimationView(name: "a_very_angry_sushi")
+        
+        view.addSubview(angrySushi)
+        
+        angrySushi.translatesAutoresizingMaskIntoConstraints = false
+        
+        let constraints = [angrySushi.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+                           angrySushi.centerXAnchor.constraint(equalTo: view.centerXAnchor)]
+        
+        NSLayoutConstraint.activate(constraints)
+        
+        angrySushi.loopAnimation = true
+        angrySushi.contentMode = .scaleAspectFit
+        angrySushi.play()
+        
+        createGoodbyeLabel(viewParent: angrySushi)
+    }
+    
+    private func createGoodbyeLabel(viewParent: UIView) {
+        
+        let goodByeLabel = UILabel()
+        goodByeLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        goodByeLabel.textAlignment = .center
+        goodByeLabel.text = "That's it folks! See you later"
+        
+        view.addSubview(goodByeLabel)
+        
+        goodByeLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        let constraints = [goodByeLabel.topAnchor.constraint(equalTo: viewParent.bottomAnchor, constant: 16),
+                           goodByeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+                           goodByeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)]
+        
+        NSLayoutConstraint.activate(constraints)
+    }
 }

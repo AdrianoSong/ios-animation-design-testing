@@ -24,7 +24,7 @@ class SwippingPageViewController: UICollectionViewController, UICollectionViewDe
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "Auto Layout 2"
+        title = "Swipping Page"
         navigationController?.navigationBar.prefersLargeTitles = false
         view.backgroundColor = UIColor.white
         
