@@ -10,6 +10,7 @@
 		B3CF644D35CFA38A73CA00FA /* Pods_SampleMessageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF84AFC0A886263976BACACA /* Pods_SampleMessageApp.framework */; };
 		E407EA6A21ED0BF700E0E13E /* StretchyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407EA6921ED0BF700E0E13E /* StretchyCollectionViewController.swift */; };
 		E407EA6C21ED0FBB00E0E13E /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407EA6B21ED0FBB00E0E13E /* HeaderCollectionReusableView.swift */; };
+		E41C061721ED47A000C7CEA2 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41C061621ED47A000C7CEA2 /* ButtonExtension.swift */; };
 		E425029521E4CCA400966855 /* a_very_angry_sushi.json in Resources */ = {isa = PBXBuildFile; fileRef = E425029221E4CCA400966855 /* a_very_angry_sushi.json */; };
 		E425029621E4CCA400966855 /* motorcycle.json in Resources */ = {isa = PBXBuildFile; fileRef = E425029321E4CCA400966855 /* motorcycle.json */; };
 		E425029721E4CCA400966855 /* sushi_fitness.json in Resources */ = {isa = PBXBuildFile; fileRef = E425029421E4CCA400966855 /* sushi_fitness.json */; };
@@ -37,6 +38,7 @@
 		D1259DFEACF4C83A0D127F81 /* Pods-SampleMessageApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleMessageApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleMessageApp/Pods-SampleMessageApp.release.xcconfig"; sourceTree = "<group>"; };
 		E407EA6921ED0BF700E0E13E /* StretchyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyCollectionViewController.swift; sourceTree = "<group>"; };
 		E407EA6B21ED0FBB00E0E13E /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		E41C061621ED47A000C7CEA2 /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		E425029221E4CCA400966855 /* a_very_angry_sushi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = a_very_angry_sushi.json; sourceTree = "<group>"; };
 		E425029321E4CCA400966855 /* motorcycle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = motorcycle.json; sourceTree = "<group>"; };
 		E425029421E4CCA400966855 /* sushi_fitness.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sushi_fitness.json; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				E4B911F421BC086600AC68E8 /* ChatMessage.swift */,
 				E4B911F621BC14B800AC68E8 /* DateExtension.swift */,
 				E4B911F821BC184A00AC68E8 /* DateHeaderLabel.swift */,
+				E41C061621ED47A000C7CEA2 /* ButtonExtension.swift */,
 				E435A35B21B8802300B5EE58 /* Assets.xcassets */,
 				E435A35D21B8802300B5EE58 /* LaunchScreen.storyboard */,
 				E435A36021B8802300B5EE58 /* Info.plist */,
@@ -276,6 +279,7 @@
 				E4DA5D6821DE53DA00C24B71 /* Page.swift in Sources */,
 				E407EA6A21ED0BF700E0E13E /* StretchyCollectionViewController.swift in Sources */,
 				E4B911F921BC184A00AC68E8 /* DateHeaderLabel.swift in Sources */,
+				E41C061721ED47A000C7CEA2 /* ButtonExtension.swift in Sources */,
 				E4C4D9A821DF97AE00C4FB03 /* AnimationViewController.swift in Sources */,
 				E47B818521ED2B3900B5776A /* StretchyHeaderLayout.swift in Sources */,
 				E4BBE44821ED3F6D0093172A /* MyCollectionViewCell.swift in Sources */,

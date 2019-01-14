@@ -36,7 +36,6 @@ class StretchyCollectionViewController: UICollectionViewController, UICollection
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let contentOffsetY = scrollView.contentOffset.y
-        print(contentOffsetY)
         
         if contentOffsetY < 0 {
             header?.animator?.fractionComplete = abs(contentOffsetY) / 100

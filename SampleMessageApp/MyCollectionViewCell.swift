@@ -31,7 +31,8 @@ class MyCollectionViewCell: UICollectionViewCell {
         button.setTitle("Go To Next VC", for: .normal)
         button.backgroundColor = .orange
         button.titleLabel?.textColor = .white
-        button.addTarget(self, action: #selector(jumpToAnotherVC), for: .touchUpInside)
+        button.layer.cornerRadius = 6
+        button.addTarget(self, action: #selector(jumpToAnotherVC(_:)), for: .touchUpInside)
         
         addSubview(button)
         
@@ -47,7 +48,10 @@ class MyCollectionViewCell: UICollectionViewCell {
     }
     
     @objc
-    fileprivate func jumpToAnotherVC() {
-        delegate?.didTapCollectionViewCell()
+    fileprivate func jumpToAnotherVC(_ sender: UIButton) {
+        
+        sender.pulse { [weak self] in
+            self?.delegate?.didTapCollectionViewCell()
+        }
     }
 }

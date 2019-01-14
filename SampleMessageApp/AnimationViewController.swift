@@ -71,7 +71,9 @@ class AnimationViewController: UIViewController {
         angrySushi.translatesAutoresizingMaskIntoConstraints = false
         
         let constraints = [angrySushi.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-                           angrySushi.centerXAnchor.constraint(equalTo: view.centerXAnchor)]
+                           angrySushi.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                           angrySushi.widthAnchor.constraint(equalToConstant: 200),
+                           angrySushi.heightAnchor.constraint(equalToConstant: 200)]
         
         NSLayoutConstraint.activate(constraints)
         
@@ -88,6 +90,7 @@ class AnimationViewController: UIViewController {
         goodByeLabel.font = UIFont.boldSystemFont(ofSize: 24)
         goodByeLabel.textAlignment = .center
         goodByeLabel.text = "That's all folks! See you later"
+        goodByeLabel.numberOfLines = 0
         
         view.addSubview(goodByeLabel)
         
