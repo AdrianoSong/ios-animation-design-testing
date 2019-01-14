@@ -23,6 +23,12 @@ class AnimationViewController: UIViewController {
         createInfoLabel()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     fileprivate func createInfoLabel() {
        
         titleVCLabel.font = UIFont.boldSystemFont(ofSize: 24)

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B3CF644D35CFA38A73CA00FA /* Pods_SampleMessageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF84AFC0A886263976BACACA /* Pods_SampleMessageApp.framework */; };
+		E407EA6A21ED0BF700E0E13E /* StretchyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407EA6921ED0BF700E0E13E /* StretchyCollectionViewController.swift */; };
+		E407EA6C21ED0FBB00E0E13E /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407EA6B21ED0FBB00E0E13E /* HeaderCollectionReusableView.swift */; };
 		E425029521E4CCA400966855 /* a_very_angry_sushi.json in Resources */ = {isa = PBXBuildFile; fileRef = E425029221E4CCA400966855 /* a_very_angry_sushi.json */; };
 		E425029621E4CCA400966855 /* motorcycle.json in Resources */ = {isa = PBXBuildFile; fileRef = E425029321E4CCA400966855 /* motorcycle.json */; };
 		E425029721E4CCA400966855 /* sushi_fitness.json in Resources */ = {isa = PBXBuildFile; fileRef = E425029421E4CCA400966855 /* sushi_fitness.json */; };
@@ -18,10 +20,12 @@
 		E435A35C21B8802300B5EE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E435A35B21B8802300B5EE58 /* Assets.xcassets */; };
 		E435A35F21B8802300B5EE58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E435A35D21B8802300B5EE58 /* LaunchScreen.storyboard */; };
 		E435A36721B884D800B5EE58 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E435A36621B884D800B5EE58 /* MessageCell.swift */; };
+		E47B818521ED2B3900B5776A /* StretchyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47B818421ED2B3900B5776A /* StretchyHeaderLayout.swift */; };
 		E497B2B021C07D81001BD2DC /* SwippingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E497B2AF21C07D81001BD2DC /* SwippingPageViewController.swift */; };
 		E4B911F521BC086600AC68E8 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B911F421BC086600AC68E8 /* ChatMessage.swift */; };
 		E4B911F721BC14B800AC68E8 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B911F621BC14B800AC68E8 /* DateExtension.swift */; };
 		E4B911F921BC184A00AC68E8 /* DateHeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B911F821BC184A00AC68E8 /* DateHeaderLabel.swift */; };
+		E4BBE44821ED3F6D0093172A /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BBE44721ED3F6D0093172A /* MyCollectionViewCell.swift */; };
 		E4C4D9A821DF97AE00C4FB03 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C4D9A721DF97AE00C4FB03 /* AnimationViewController.swift */; };
 		E4DA5D6621DE4B6500C24B71 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DA5D6521DE4B6500C24B71 /* PageCell.swift */; };
 		E4DA5D6821DE53DA00C24B71 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DA5D6721DE53DA00C24B71 /* Page.swift */; };
@@ -31,6 +35,8 @@
 		1B20E272DF17F046DC27C79E /* Pods-SampleMessageApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleMessageApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleMessageApp/Pods-SampleMessageApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BF84AFC0A886263976BACACA /* Pods_SampleMessageApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleMessageApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1259DFEACF4C83A0D127F81 /* Pods-SampleMessageApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleMessageApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleMessageApp/Pods-SampleMessageApp.release.xcconfig"; sourceTree = "<group>"; };
+		E407EA6921ED0BF700E0E13E /* StretchyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyCollectionViewController.swift; sourceTree = "<group>"; };
+		E407EA6B21ED0FBB00E0E13E /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		E425029221E4CCA400966855 /* a_very_angry_sushi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = a_very_angry_sushi.json; sourceTree = "<group>"; };
 		E425029321E4CCA400966855 /* motorcycle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = motorcycle.json; sourceTree = "<group>"; };
 		E425029421E4CCA400966855 /* sushi_fitness.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sushi_fitness.json; sourceTree = "<group>"; };
@@ -43,10 +49,12 @@
 		E435A35E21B8802300B5EE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E435A36021B8802300B5EE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E435A36621B884D800B5EE58 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		E47B818421ED2B3900B5776A /* StretchyHeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderLayout.swift; sourceTree = "<group>"; };
 		E497B2AF21C07D81001BD2DC /* SwippingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwippingPageViewController.swift; sourceTree = "<group>"; };
 		E4B911F421BC086600AC68E8 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		E4B911F621BC14B800AC68E8 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		E4B911F821BC184A00AC68E8 /* DateHeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeaderLabel.swift; sourceTree = "<group>"; };
+		E4BBE44721ED3F6D0093172A /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		E4C4D9A721DF97AE00C4FB03 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		E4DA5D6521DE4B6500C24B71 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		E4DA5D6721DE53DA00C24B71 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
@@ -118,6 +126,10 @@
 				E427F29321E511C5000AE1F4 /* SplashViewController.swift */,
 				E435A35621B8802100B5EE58 /* ViewController.swift */,
 				E497B2AF21C07D81001BD2DC /* SwippingPageViewController.swift */,
+				E407EA6921ED0BF700E0E13E /* StretchyCollectionViewController.swift */,
+				E407EA6B21ED0FBB00E0E13E /* HeaderCollectionReusableView.swift */,
+				E4BBE44721ED3F6D0093172A /* MyCollectionViewCell.swift */,
+				E47B818421ED2B3900B5776A /* StretchyHeaderLayout.swift */,
 				E4C4D9A721DF97AE00C4FB03 /* AnimationViewController.swift */,
 				E4DA5D6721DE53DA00C24B71 /* Page.swift */,
 				E4DA5D6521DE4B6500C24B71 /* PageCell.swift */,
@@ -260,9 +272,13 @@
 				E4B911F521BC086600AC68E8 /* ChatMessage.swift in Sources */,
 				E435A35521B8802100B5EE58 /* AppDelegate.swift in Sources */,
 				E435A36721B884D800B5EE58 /* MessageCell.swift in Sources */,
+				E407EA6C21ED0FBB00E0E13E /* HeaderCollectionReusableView.swift in Sources */,
 				E4DA5D6821DE53DA00C24B71 /* Page.swift in Sources */,
+				E407EA6A21ED0BF700E0E13E /* StretchyCollectionViewController.swift in Sources */,
 				E4B911F921BC184A00AC68E8 /* DateHeaderLabel.swift in Sources */,
 				E4C4D9A821DF97AE00C4FB03 /* AnimationViewController.swift in Sources */,
+				E47B818521ED2B3900B5776A /* StretchyHeaderLayout.swift in Sources */,
+				E4BBE44821ED3F6D0093172A /* MyCollectionViewCell.swift in Sources */,
 				E4DA5D6621DE4B6500C24B71 /* PageCell.swift in Sources */,
 				E497B2B021C07D81001BD2DC /* SwippingPageViewController.swift in Sources */,
 				E427F29421E511C5000AE1F4 /* SplashViewController.swift in Sources */,
@@ -417,7 +433,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -439,7 +455,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
