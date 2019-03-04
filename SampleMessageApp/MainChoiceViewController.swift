@@ -25,8 +25,11 @@ class MainChoiceViewController: UITableViewController {
         
         let animationVC = AnimationViewController()
         animationVC.title = "Animation VC"
+        
+        let facebookLike = FacebookLikeViewController()
+        facebookLike.title = "Facebook like"
 
-        let views = [newVC, swipeVC, stretchyVC, animationVC]
+        let views = [newVC, swipeVC, stretchyVC, animationVC, facebookLike]
         
         return views
     }()
