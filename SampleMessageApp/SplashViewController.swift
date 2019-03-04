@@ -45,7 +45,7 @@ class SplashViewController: UIViewController {
         countdown.contentMode = .scaleAspectFit
         countdown.play { [weak self] (_) in
             
-            let newVC = ViewController()
+            let newVC = MainChoiceViewController() //ViewController()
             self?.navigationController?.pushViewController(newVC, animated: true)
         }
     }

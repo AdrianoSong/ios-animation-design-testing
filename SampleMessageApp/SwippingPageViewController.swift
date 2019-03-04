@@ -84,9 +84,7 @@ class SwippingPageViewController: UICollectionViewController, UICollectionViewDe
     
     func didTapFinishTutorial() {
         
-        let newVC = StretchyCollectionViewController(collectionViewLayout: StretchyHeaderLayout())
-        
-        navigationController?.pushViewController(newVC, animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     private func configBottomControls() {

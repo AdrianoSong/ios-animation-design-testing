@@ -33,6 +33,12 @@ class StretchyCollectionViewController: UICollectionViewController, UICollection
         navigationController?.isNavigationBarHidden = true
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let contentOffsetY = scrollView.contentOffset.y
@@ -106,6 +112,6 @@ class StretchyCollectionViewController: UICollectionViewController, UICollection
     
     func didTapCollectionViewCell() {
         
-        navigationController?.pushViewController(AnimationViewController(), animated: true)
+        navigationController?.popViewController(animated: true)
     }
 }

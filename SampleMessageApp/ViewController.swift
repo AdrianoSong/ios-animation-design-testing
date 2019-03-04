@@ -46,11 +46,7 @@ class ViewController: UITableViewController {
     @objc
     private func goToNextViewController(){
         
-        let collectionViewFlowLayout = UICollectionViewFlowLayout()
-        collectionViewFlowLayout.scrollDirection = .horizontal
-        
-        let newVC = SwippingPageViewController(collectionViewLayout: collectionViewFlowLayout)
-        navigationController?.pushViewController(newVC, animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     private func animateTable() {
@@ -126,7 +122,7 @@ class ViewController: UITableViewController {
         if chatMessages.count - 1 == section {
             
             let myButton = UIButton()
-            myButton.setTitle("Go To Next ViewController", for: .normal)
+            myButton.setTitle("pop ViewController", for: .normal)
             myButton.setTitleColor(UIColor.white, for: .normal)
             myButton.backgroundColor = UIColor.blue
             myButton.addTarget(self, action: #selector(goToNextViewController), for: .touchUpInside)

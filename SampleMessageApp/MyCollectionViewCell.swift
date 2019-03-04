@@ -28,7 +28,7 @@ class MyCollectionViewCell: UICollectionViewCell {
     }
     
     fileprivate func setupButton() {
-        button.setTitle("Go To Next VC", for: .normal)
+        button.setTitle("dismiss VC", for: .normal)
         button.backgroundColor = .orange
         button.titleLabel?.textColor = .white
         button.layer.cornerRadius = 6
