@@ -29,7 +29,10 @@ class MainChoiceViewController: UITableViewController {
         let facebookLike = FacebookLikeViewController()
         facebookLike.title = "Facebook like"
 
-        let views = [newVC, swipeVC, stretchyVC, animationVC, facebookLike]
+        let tinderCardVC = TinderCardViewController()
+        tinderCardVC.title = "Card Screen sample"
+        
+        let views = [newVC, swipeVC, stretchyVC, animationVC, facebookLike, tinderCardVC]
         
         return views
     }()
@@ -70,6 +73,21 @@ extension MainChoiceViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
-        navigationController?.pushViewController(viewControllers?[indexPath.row] ?? UIViewController(), animated: true)
+        if viewControllers?[indexPath.row] is TinderCardViewController {
+            
+            let tinderVC = TinderCardViewController()
+    
+            tinderVC.providesPresentationContextTransitionStyle = true
+            tinderVC.definesPresentationContext = true
+            tinderVC.modalPresentationStyle = .overCurrentContext
+            tinderVC.modalTransitionStyle = .crossDissolve
+            tinderVC.view.backgroundColor = UIColor.blue.withAlphaComponent(0.3)
+            
+            present(tinderVC, animated: true, completion: nil)
+        } else {
+            
+            navigationController?.pushViewController(viewControllers?[indexPath.row] ?? UIViewController(),
+                                                     animated: true)
+        }
     }
 }

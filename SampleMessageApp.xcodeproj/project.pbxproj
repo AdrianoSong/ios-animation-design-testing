@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		296A701F2233FFBA00AEB2BA /* TinderCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A701E2233FFBA00AEB2BA /* TinderCardViewController.swift */; };
 		296D9577222D88DD00F15F66 /* MainChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296D9576222D88DD00F15F66 /* MainChoiceViewController.swift */; };
 		29C4A736222DABD300558A17 /* FacebookLikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4A735222DABD300558A17 /* FacebookLikeViewController.swift */; };
 		B3CF644D35CFA38A73CA00FA /* Pods_SampleMessageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF84AFC0A886263976BACACA /* Pods_SampleMessageApp.framework */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		1B20E272DF17F046DC27C79E /* Pods-SampleMessageApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleMessageApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleMessageApp/Pods-SampleMessageApp.debug.xcconfig"; sourceTree = "<group>"; };
+		296A701E2233FFBA00AEB2BA /* TinderCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCardViewController.swift; sourceTree = "<group>"; };
 		296D9576222D88DD00F15F66 /* MainChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainChoiceViewController.swift; sourceTree = "<group>"; };
 		29C4A735222DABD300558A17 /* FacebookLikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLikeViewController.swift; sourceTree = "<group>"; };
 		BF84AFC0A886263976BACACA /* Pods_SampleMessageApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleMessageApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +136,7 @@
 				E435A35621B8802100B5EE58 /* ViewController.swift */,
 				E497B2AF21C07D81001BD2DC /* SwippingPageViewController.swift */,
 				E407EA6921ED0BF700E0E13E /* StretchyCollectionViewController.swift */,
+				296A701E2233FFBA00AEB2BA /* TinderCardViewController.swift */,
 				29C4A735222DABD300558A17 /* FacebookLikeViewController.swift */,
 				E407EA6B21ED0FBB00E0E13E /* HeaderCollectionReusableView.swift */,
 				E4BBE44721ED3F6D0093172A /* MyCollectionViewCell.swift */,
@@ -283,6 +286,7 @@
 				E435A35521B8802100B5EE58 /* AppDelegate.swift in Sources */,
 				E435A36721B884D800B5EE58 /* MessageCell.swift in Sources */,
 				E407EA6C21ED0FBB00E0E13E /* HeaderCollectionReusableView.swift in Sources */,
+				296A701F2233FFBA00AEB2BA /* TinderCardViewController.swift in Sources */,
 				E4DA5D6821DE53DA00C24B71 /* Page.swift in Sources */,
 				E407EA6A21ED0BF700E0E13E /* StretchyCollectionViewController.swift in Sources */,
 				E4B911F921BC184A00AC68E8 /* DateHeaderLabel.swift in Sources */,
